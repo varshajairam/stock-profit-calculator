@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-5 mb-5">
+        <h2>Calculate Stock Profit</h2>
+        <form action = "http://localhost:5000/" method = "POST" >
+            <div class="form-group">
+               <label for="symbol">Stock Symbol</label>
+               <input type="text" class="form-control" id="symbol" name="symbol">
+            </div>
+            <div class="form-group">
+               <label for="allotment">Allotment</label>
+               <input type="text" class="form-control" id="allotment" name="allotment">
+            </div>
+            <div class="form-group">
+               <label for="final_share_price">Final Share Price</label>
+               <input type="text" class="form-control" id="final_share_price" name="final_share_price">
+            </div>
+            <div class="form-group">
+               <label for="sell_commission">Sell Commission</label>
+               <input type="text" class="form-control" id="sell_commission" name="sell_commission">
+            </div>
+            <div class="form-group">
+               <label for="initial_share_price">Initial Share Price</label>
+               <input type="text" class="form-control" id="initial_share_price" name="initial_share_price">
+            </div>
+            <div class="form-group">
+               <label for="buy_commission">Buy Commission</label>
+               <input type="text" class="form-control" id="buy_commission" name="buy_commission">
+            </div>
+            <div class="form-group">
+               <label for="capital_gain_rate">Capital Gain Rate</label>
+               <input type="text" class="form-control" id="capital_gain_rate" name="capital_gain_rate">
+            </div>
+            <button type="submit" class="btn btn-primary">Get Stock Profit</button>
+        </form>
+        {{result}}
+    </div>
+</body>
+</html>
